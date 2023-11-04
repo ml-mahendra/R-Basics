@@ -72,3 +72,10 @@ colSums(is.na(shuff_heart_data)) # gives the na values present in all cols.
  # replace all NA at once
  
  shuff_heart_data[is.na(shuff_heart_data)] <- 0 # this will take only cols. 
+ 
+ 
+ 
+ 
+ ##### TO clear all the objects in R
+ 
+ rm(list = ls())  #ls is list of all objects got created under global environment. 
