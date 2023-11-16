@@ -63,5 +63,4 @@ shuff_heart_data[is.na(shuff_heart_data$RestingBP), "RestingBP"] <- 0
  shuff_heart_data[is.na(shuff_heart_data)] <- 0 # this will take only cols. 
  
  ##### TO clear all the objects in R
- 
- rm(list = ls())  #ls is the list of all objects got created under the global environment. 
+ rm(list = ls())  #ls is the list of all objects created under the global environment. 
