@@ -18,4 +18,9 @@ sum
 product = m1_t %*% m2_t
 product
 
+# Comparing the m1 %*% m2 and m2 %*% m1
+p1 = m1_t %*% m2_t
+p1
 
+p2 = m2_t %*% m1_t
+p2
