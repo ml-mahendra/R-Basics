@@ -1,6 +1,5 @@
 ##################### Box Plots #########################################
 
-
 library(tidyverse)
 
 # Load data & Also convert all character variables to factors
@@ -18,7 +17,7 @@ boxplot(df$dance)
 
 # Who is the outlier?
 df |> 
-  filter(dance > 90) |> # an appox value looking at the graph
+  filter(dance > 90) |> # an approx value looking at the graph
   select(state, dance)
 
 # Boxplot with options
@@ -53,11 +52,9 @@ df_sp <- read.csv('state_trends.csv') |>
   select (basketball : hockey) |>
   glimpse()
 
-
 df_sp |> plot()
 
 # two variable scatter plot 
-
 df_sp |>
   select(soccer, hockey) |>
   plot()
@@ -72,7 +69,6 @@ df_sp |>
     col = 'red',
     pch = 3,  #psch = plotting character. we use 20 for small circles.
   )
-
 ?pch # Give other characters 
 
 
@@ -81,10 +77,8 @@ df_sp |>
 
 library(datasets)
 uspop
-
 ?ts # get info with time series objects
 plot(uspop)
-
 
 uspop |> 
   plot(
@@ -97,12 +91,10 @@ text(1930, 20, "1930", col = "red")  # wht year, and at what Y axis value u need
 abline (v=1940, col= "lightgray")
 text(1940, 10, "1940", col = "red")
 
-# using specific plot that is for time series
-
+# Using a specific plot that is for a time series
 ts.plot(uspop)  # alternative : plot.ts(uspop)
 
 # MULTIPLE TIME SERIES #####################################
-
 # EuStockMarkets
 EuStockMarkets
 
@@ -121,8 +113,3 @@ legend(              # Add legend
   col = rainbow(4),  
   lty = 1            # Line type: solid
 )
-
-
-
-
-

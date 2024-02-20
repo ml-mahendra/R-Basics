@@ -3,7 +3,6 @@ library(tidyverse)  # Loads the `tidyverse` collection
 
 
 # LOAD DATA 
-
 # Also convert several adjacent variables to factors
 df <- read_csv("state_trends.csv") |>
   select(  # Rename variables with `select`
@@ -16,7 +15,6 @@ df <- read_csv("state_trends.csv") |>
     Stats = statistics) |> 
   print()
 
-# CORRELATION MATRIX #######################################
 
 # Scatterplot matrix
 df |> plot()
